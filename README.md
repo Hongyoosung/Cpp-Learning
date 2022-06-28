@@ -9,6 +9,6 @@
 + ## 변수
   + [변수의 개념](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Valuable.md)
   + 자료형
-  + 연산자를 통한 변수의 활용
+  + [연산자를 통한 변수의 활용](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Value%20Arithmetic.md)
   
 
