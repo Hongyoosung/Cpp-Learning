@@ -14,3 +14,5 @@ x - y : x에 y의 값을 뺌
 x * y : x와 y의 값을 곱함
 
 x / y : x에 y의 값을 나눈 몫(이때, 나누는 값이 0일 경우 에러가 발생한다.
+
+https://github.com/geunkim/CPPLectures/blob/master/BasicProgramming/Operators.md
