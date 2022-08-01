@@ -13,4 +13,4 @@
   
   
 + ## 제어문
-  + [제어문](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Control%20Statement.md)
+  + [제어문](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Control/Control%20Statement.md)
