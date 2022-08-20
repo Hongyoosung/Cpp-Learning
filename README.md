@@ -19,5 +19,5 @@
   + [반복문](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Control/Iteration.md)
 
 + ## 배열
-  + 배열의 사용
+  + [배열의 사용](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Array/useArray.md)
   + 다차원 배열
