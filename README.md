@@ -20,4 +20,4 @@
 
 + ## 배열
   + [배열의 사용](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Array/useArray.md)
-  + 다차원 배열
+  + [다차원 배열](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Array/useArray2.md)
