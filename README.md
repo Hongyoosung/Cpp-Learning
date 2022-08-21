@@ -24,5 +24,6 @@
   
 + ## 함수
   + [함수란](https://github.com/Hongyoosung/Cpp-Basic/blob/master/function/func.md)
-  + [함수의 활용](https://github.com/Hongyoosung/Cpp-Basic/blob/master/function/func2.md)
+  + [기본 매개변수](https://github.com/Hongyoosung/Cpp-Basic/blob/master/function/func2.md)
+  + [함수 오버로드]
   + 참조 변수
