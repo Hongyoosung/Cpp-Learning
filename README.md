@@ -39,4 +39,4 @@
   + [생성자와 소멸자](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Class/Constructor-Destructor.md)
   
 + ## 객체 포인터
-  + 객체 포인
+  + [객체 포인터](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/WhatObjectPointer.md)
