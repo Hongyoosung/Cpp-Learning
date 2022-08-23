@@ -35,4 +35,5 @@
   + 구조체
   
 + ## 클래스
-  + 클래스란
+  + [클래스란](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Class/WhatClass.md)
+  + [생성자와 소멸자]()
