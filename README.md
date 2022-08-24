@@ -38,6 +38,6 @@
   + [클래스란](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Class/WhatClass.md)
   + [생성자와 소멸자](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Class/Constructor-Destructor.md)
   
-+ ## 객체 포인터, 객체 배열, 객체의 동적 생성
++ ## 객체 
   + [객체 포인터](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/WhatObjectPointer.md)
   + [객체 배열](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/ObjectArray.md)
