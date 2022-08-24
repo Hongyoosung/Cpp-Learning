@@ -1,4 +1,4 @@
-# string 클래스를 통한 문자열 사용
+# string 클래스를 통한 문자열 사용 1
 
 기존에 문자열을 출력하는 방법으로는 char 형의 배열을 통해 '\0'가 나올 때 까지 한 단어씩 출력하는 법이 있었다. 이외에도 다른 한 가지 방법이 있는데, 그것은 c++ 표준 라이브러리에서
 제공하는 string 클래스를 이용하는 것이다. string 클래스는 문자열을 저장하는 기능 말고도, 문자열을 활용하는 다양한 함수와 연산자를 멤버로 가지고 있어 보다 편리하게 문자열을
@@ -207,6 +207,24 @@ Hong Yoo Sung
 문자는 프로그램 내부에서 2진수 값으로 저장되어 있고, 알파벳 순으로 수가 증가하는 방식이기 때문에
 부등호를 통해 문자의 알파벳 순을 비교할 수 있다. 또한, 문자열의 크기를 비교할 때는 맨 앞의 문자만 확인한다는 것을 알 수 있다.
                                                 
+						      
++ ## string 클래스의 주요 멤버 함수
+						      
+![image](https://user-images.githubusercontent.com/101240036/186477458-a932cce5-56ec-4fce-8d26-610f8d4ba779.png)
+						      
+![image](https://user-images.githubusercontent.com/101240036/186477659-95ddbcbe-e864-4b27-8490-53b2ed2cac21.png)
+
+						      
+![image](https://user-images.githubusercontent.com/101240036/186477713-5dfdd4f7-2d71-413a-a8e2-f7dff4b18758.png)
+
+						      
+![image](https://user-images.githubusercontent.com/101240036/186477780-c32ea021-1869-446e-8e64-0f179c54f1cf.png)
+
+> 사진 출처 : https://rebro.kr/53
+
+
+
+
                                                 
 
  
