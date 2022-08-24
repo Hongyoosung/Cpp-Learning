@@ -31,12 +31,11 @@
 + ## 포인터
   + 포인터 변수
   
-+ ## 구조체
-  + 구조체
   
 + ## 클래스
   + [클래스란](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Class/WhatClass.md)
   + [생성자와 소멸자](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Class/Constructor-Destructor.md)
+  + 
   
 + ## 객체 
   + [객체 포인터](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/WhatObjectPointer.md)
