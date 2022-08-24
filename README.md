@@ -43,5 +43,5 @@
   + [동적 메모리](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/Dynamic%20Memory.md)
   + [객체의 동적 생성 및 반환](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/Object%20And%20Dynamic%20Memory.md)
   + [this 포인터](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/thisPointer.md)
-  + 문자열 1
+  + [문자열 1](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/String.md)
   + [문자열 2](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/String2.md)
