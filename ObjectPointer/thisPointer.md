@@ -59,7 +59,7 @@ class Man {
 	int age;
 public:
 	void setAge(Man* this, int age) { //매개 변수 this 생성
-      this->age = age; 
+      	this->age = age; 
       } 
 };
 ```
