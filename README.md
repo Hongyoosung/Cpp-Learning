@@ -29,7 +29,7 @@
   + [참조 변수](https://github.com/Hongyoosung/Cpp-Basic/blob/master/function/Reference%20Variable.md)
 
 + ## 포인터
-  + 포인터 변수
+  + [포인터 변수]()
   
   
 + ## 클래스
