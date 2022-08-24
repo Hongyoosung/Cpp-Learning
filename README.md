@@ -37,7 +37,7 @@
   + [생성자와 소멸자](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Class/Constructor-Destructor.md)
   + 구조체
   
-+ ## 객체 
++ ## 객체의 활용
   + [객체 포인터](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/WhatObjectPointer.md)
   + [객체 배열](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/ObjectArray.md)
   + [동적 메모리](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/Dynamic%20Memory.md)
