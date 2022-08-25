@@ -115,3 +115,99 @@ int main()
 따라서 a와 b는 값의 변동을 서로 공유하게 된다. 참조 변수는 참조할 저장공간을 필요로 하기 때문에 대입 연산자로 상수가 아닌 변수만 사용이 가능하다.
 
 
++ ## 참조 변수의 특징
+
+    + 상수를 대입할 수 없다.
+    + 참조 변수의 배열은 만들 수 없다.
+    + 참조 변수에 또 다른 참조 변수를 저장할 수 있다.
+    + 포인터 변수에 참조 변수의 주소를 저장할 수 있다.
+    + 참조 변수는 선언과 동시에 초기화해야 한다.
+
++ ## 객체에 대한 참조
+
+클래스 형태의 참조 변수를 선언할 수 있다. 참조 변수 ref는 객체 이름만 다를 뿐, Jinho와 같은 저장 공간을 사용한다.
+```c++
+class Man {
+	int age;
+public:
+	Man() { age = 26; }
+	Man(int age) { this->age = age; }
+	void setAge(int age) { this->age = age; }
+	int getAge() { return age; }
+};
+
+
+int main(int argc, const char* argv[]) {
+
+	Man Jinho;
+	Man& ref = Jinho;
+
+	ref.setAge(30);
+	cout << Jinho.getAge() << endl;
+
+	return 0;
+}
+```
+실행 결과
+```c++
+30      // ref의 변동 사항이 Jinho에도 적용된 모습
+```
+
++ ## 참조에 의한 호출로 객체 전달
+
+```c++
+void aging(Man& a){
+    int b = a.getAge();
+    a.setAge(b+10);
+ }
+```
+
+값에 의한 호출을 통한 객체 전달에서 함수에 객체를 전달받으면 매개 변수 객체가 생성되고, 소멸자만을 실행한다.
+참조에 의한 호출로 객체를 전달할 시, 매개 변수 객체를 생성해 저장 공간을 할당받는 것이 아니라 이름만을 생성하고 저장 공간을 
+공유하기 때문에 생성자나 소멸자를 실행하지 않는다.
+
+
++ ## 참조 반환(리턴)
+
+참조를 반환하는 함수를 작성할 수 있다. 이 경우, 반환 값은 참조 변수의 형태이다. 다음은 참조 리턴을 이용해 문자열을 변경하는 예이다.
+
+```c++
+char& find(char a[], int i) {
+	return a[i];    // 참조 리턴
+}
+
+int main(int argc, const char* argv[]) {
+
+	char name[] = { "Jinho" };
+	cout << name << endl;
+
+	find(name, 0) = 'M';   // name의 첫 번째 index를 'M'으로 변경
+	cout << name << endl;
+
+	char& ref = find(name, 3);  // ref는 name의 4번 째 index를 참조
+	ref = 'o';                  // name의 4번 째 index를 'o'로 변경
+	cout << name << endl;
+
+	return 0;
+}
+```
+실행 결과
+```c++
+Jinho
+Minho
+Minoo
+```
+
+만약 find 함수를 참조 형태로 하지 않을 경우, 메인 함수의 find 함수 부분에 컴파일 에러가 발생한다.
+
+
+
+ 
+
+
+
+
+
+
+
+
