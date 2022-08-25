@@ -18,3 +18,65 @@
 
 클래스의 인스턴스 멤버는 객체가 선언된 범위를 벗어날 경우 객체와 함께 소멸되지만, 클래스 멤버는 다른 객체가 여전히 사용할 수 있으므로, 특정한 생명 주기가 주어지면 안된다.
 따라서 클래스 멤버의 선언은 전역(global) 공간에서 이루어진다.
+
++ ## static 멤버의 선언과 활용
+
+```c++
+class Man {
+	int money;
+public:
+	Man() { money = 500; }
+	void setMoney(int money) { this->money = money; }
+	int getMoney() { return money; }
+
+	static int gold;             // static 멤버 구현
+	static int useGold(int g) {
+		gold -= g;
+		return 5 * g;
+	}
+};
+
+// static 변수는 전역 공간에 생성
+int Man::gold = 500;
+
+int main(int argc, const char* argv[]) {
+
+  cout << Man::gold << endl;   // static 멤버 gold 출력
+	Man Jaehak;
+	Man Donghun;
+
+	
+	cout << "Jaehak의 : gold : " << Jaehak.gold << endl;
+	cout << "Jaehak의 : money : " << Jaehak.getMoney() << endl;
+	cout << "Donghun의 gold : " << Donghun.gold << endl;
+	cout << "Donghun의 money: " << Donghun.getMoney() << endl << endl;
+
+	// gold를 사용한 만큼 차감하고 money를 획득
+	Donghun.setMoney(Donghun.getMoney() + Donghun.useGold(100)); // -> 클래스 멤버는 Man::useGold()의 형태처럼 클래스 이름으로 사용 가능
+
+	cout << "Jaehak의 : gold : " << Jaehak.gold << endl;
+	cout << "Jaehak의 : money : " << Jaehak.getMoney() << endl;
+	cout << "Donghun의 gold : " << Donghun.gold << endl;
+	cout << "Donghun의 money: " << Donghun.getMoney();
+
+	return 0;
+}
+```
+실행 결과
+```c++
+Jaehak의 : gold : 500
+Jaehak의 : money : 500
+Donghun의 gold : 500
+Donghun의 money: 500
+
+Jaehak의 : gold : 400
+Jaehak의 : money : 500
+Donghun의 gold : 400
+Donghun의 money: 1000
+```
+위의 예시처럼 static 멤버는 동일 클래스의 모든 객체가 공유한다. static 멤버들은 객체 생성 이전부터 존재하고 있으므로, 아무 객체 없이도 사용할 수 있다.
+또한, 그 특성상 static 멤버는 동일 클래스의 같은 static인 멤버에만 접근할 수 있고, this 포인터를 사용할 수 없다. 
+
+
+
+
