@@ -50,6 +50,7 @@
   + [객체 치환 및 객체 반환](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Function2/Object%20Substitution.md)
   + [참조와 함수](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Function2/Reference%20And%20Fuction.md)
   + [복사 생성자](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Function2/Copy%20Constructor.md)
+  + [정적 멤버](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Function2/Static%20Member.md)
   
   
   
