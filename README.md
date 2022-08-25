@@ -51,7 +51,7 @@
   + [참조와 함수](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Function2/Reference%20And%20Fuction.md)
   + [복사 생성자](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Function2/Copy%20Constructor.md)
   + [정적 멤버](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Function2/Static%20Member.md)
-  
+  + [프렌드 함수](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Function2/Friends%20Function.md)
   
   
   
