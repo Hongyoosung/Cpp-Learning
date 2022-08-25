@@ -53,8 +53,8 @@ public:
 	int getAge() { return age; }
 };
 
-Man get() {           // 클래스로 함수를 만들 수 있다
-	Man Dohyeon(23);  // 같은 클래스의 객체에만 사용 가능
+Man get() {           // 클래스로 함수를 만들 수 있다, 같은 클래스의 객체에만 사용 가능
+	Man Dohyeon(23);  // 클래스 함수 내에 새로운 객체 생성 가능
 	return Dohyeon;   // 객체의 모든 값을 반환
 }
 int main(int argc, const char* argv[]) {
