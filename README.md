@@ -45,3 +45,6 @@
   + [this 포인터](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/thisPointer.md)
   + [문자열 1](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/String.md)
   + [문자열 2](https://github.com/Hongyoosung/Cpp-Basic/blob/master/ObjectPointer/String2.md)
+  
++ ## 함수 2
+  + 함수의 인자 전달 방식
