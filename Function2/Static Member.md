@@ -36,7 +36,7 @@ public:
 	}
 };
 
-// static 변수는 전역 공간에 생성
+// static 멤버 변수를 전역 공간에 생성, 물론 클래스 내부에 작성해도 된다.
 int Man::gold = 500;
 
 int main(int argc, const char* argv[]) {
