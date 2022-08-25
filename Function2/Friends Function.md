@@ -93,6 +93,14 @@ jinho Win
 
 다른 클래스의 모든 멤버 함수를 프렌드로 선언할 수 있다. 다음은 그 예이다.
 ```c++
+class Man;
+
+class MantoMan {
+public:
+	bool fight(Man a, Man b);
+	void training(Man& a, Man& b);
+};
+
 class Man {
 	int power;
 public:
