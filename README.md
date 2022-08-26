@@ -60,7 +60,7 @@
   + [프렌드를 활용한 연산자 오버로드](https://github.com/Hongyoosung/Cpp-Basic/blob/master/OperatorOverload/Friends%20OO.md)
   
 + ## 상속
-  
+  + [상속이란](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Inheritance/What%20Inheritance.md)
   
   
   
