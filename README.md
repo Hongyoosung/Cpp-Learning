@@ -61,6 +61,7 @@
   
 + ## 상속
   + [상속이란](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Inheritance/What%20Inheritance.md)
+  + [상속과 객체 포인터](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Inheritance/Inheritance%20And%20Objectpointer.md)
   
   
   
