@@ -14,11 +14,11 @@ int main()
 
     Person* p = Dohyeon;     // 업 캐스팅, *p = &Jinho 와 같음
 
-    Dohyeon->setAge(10);
-    Dohyeon->setMoney(100);
+    p->setAge(10);           // 부모 클래스의 객체로 자식 클래스의 객체에 영향을 줌
+    p->setMoney(100);
     p->show();
-    
 
+    
     return 0;
 }
 ```
