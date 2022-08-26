@@ -12,7 +12,7 @@ int main()
     Man Jinho("Jinho");
     Man* Dohyeon = &Jinho;
 
-    Person* p = Dohyeon;     // 업 캐스팅
+    Person* p = Dohyeon;     // 업 캐스팅, *p = &Jinho 와 같음
 
     Dohyeon->setAge(10);
     Dohyeon->setMoney(100);
