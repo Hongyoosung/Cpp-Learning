@@ -63,7 +63,7 @@
   + [상속이란](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Inheritance/What%20Inheritance.md)
   + [상속과 객체 포인터](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Inheritance/Inheritance%20And%20Objectpointer.md)
   + [상속과 생성자, 소멸자](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Inheritance/Protected.md)
-  + 상속의 종류(https://github.com/Hongyoosung/Cpp-Learning/blob/master/Inheritance/Types%20of%20inheritance.md)
+  + [상속의 종류](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Inheritance/Types%20of%20inheritance.md)
   + 다중 상속과 가상 상속
   
   
