@@ -67,7 +67,8 @@
   + [다중 상속과 가상 상속](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Inheritance/Multiple%20Inheritance.md)
   
   
-  
+  + ## 가상 함수와 추상 클래스
+    + [가상 함수와 오버라이딩](https://github.com/Hongyoosung/Cpp-Learning/tree/master/Virtual%20Functions)
   
   
 
