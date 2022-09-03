@@ -68,7 +68,7 @@
   
   
 + ## 가상 함수와 추상 클래스
-  + [가상 함수와 오버라이딩](https://github.com/Hongyoosung/Cpp-Learning/tree/master/Virtual%20Functions)
+  + [가상 함수와 오버라이딩](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Virtual%20Functions/Virtual%20Functions%20And%20Overriding.md)
   
   
 
