@@ -69,6 +69,7 @@
   
 + ## 가상 함수와 추상 클래스
   + [가상 함수와 오버라이딩](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Virtual%20Functions/Virtual%20Functions%20And%20Overriding.md)
+  + [동적 바인딩과 오버라이딩의 특징](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Virtual%20Functions/Dynamic%20Binding.md)
   
   
 
