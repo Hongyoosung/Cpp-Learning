@@ -74,5 +74,6 @@
   + [추상 클래스](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Virtual%20Functions/Abstract%20Class.md)
   
 + ## 템플릿과 표준 템플릿 라이브러리(STL)
+  + [일반화와 템플릿](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Templete/Generalization%20Template.md)
   
 
