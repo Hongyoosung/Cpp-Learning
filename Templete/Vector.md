@@ -79,7 +79,46 @@ it = v.erase(it); // 삭제 후 erase()의 리턴 값으로 it 재설정
 
 + ## vector 컨테이너 활용
 
+다음은 vector 클래스를 이용하여 정수 벡터를 사용하는 예시이다.
 
+```c++
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+int main(int argc, const char* argv[]) {
+
+	vector<int> v;
+
+	for (int i = 0; i < 5; i++) {
+		v.push_back(i);
+	}
+
+	for (int i = 0; i < v.size(); i++) {
+		cout << v[i] << " ";
+	}
+	cout << endl;
+
+	v[1] = 20;
+	v.at(2) = 30;
+
+	for (int i = 0; i < v.size(); i++) {
+		cout << v[i] << " ";
+	}
+	cout << endl << endl;
+	cout << "v의 3번 째 원소의 값 : " << v.operator[](2) << endl;
+
+	return 0;
+}
+```
+실행 결과
+```c++
+0 1 2 3 4
+0 20 30 3 4
+
+v의 3번 째 원소의 값 : 30
+```
 
 
 
