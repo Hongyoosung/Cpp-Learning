@@ -93,8 +93,10 @@ int main(int argc, const char* argv[]) {
 a
 ```
 
+	
 + **두 개 이상의 제네릭 타입을 가진 제네릭 클래스 만들기**
 
+```c++
 template <class T1, class T2>
 class Gclass {
 	T1 data1;
