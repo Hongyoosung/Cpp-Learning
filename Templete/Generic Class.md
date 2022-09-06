@@ -21,6 +21,8 @@ class1<double> b; // class1의 double형 객체 b 생성, T에 double 타입을 
 생성된 객체는 보통의 객체처럼 사용이 가능하며 컴파일러는 템플릿의 T에 int 타입과 double 타입을 적용하여 두 개의 구체화된 클래스 소스를 생성한다.
 
 + ## 제네릭 클래스 구현
+	
++ **제네릭 스택 클래스**
   
 다음은 제네릭 클래스를 통해 **스택**을 구현하는 코드이다.
 
@@ -90,9 +92,65 @@ int main(int argc, const char* argv[]) {
 3.5
 a
 ```
-  
 
-  
++ **두 개 이상의 제네릭 타입을 가진 제네릭 클래스 만들기**
+
+template <class T1, class T2>
+class Gclass {
+	T1 data1;
+	T2 data2;
+public:
+	Gclass();
+	void set(T1 a, T2 b);
+	void get(T1& a, T2& b);
+};
+
+template <class T1, class T2>
+Gclass<T1, T2>::Gclass() {
+	data1 = 0; data2 = 0;
+}
+
+template <class T1, class T2>
+void Gclass<T1, T2>::set(T1 a, T2 b) {
+	data1 = a; data2 = b;                // data1과 data2에 전달받은 a와 b를 저장
+}
+
+template <class T1, class T2>
+void Gclass<T1, T2>::get(T1& a, T2& b) { // a와 b에 set으로 저장된 data1과 data2를 저장
+	a = data1; b = data2;
+}
+
+
+
+int main(int argc, const char* argv[]) {
+
+	int a;
+	double b;
+	Gclass<int, double> x; // int와 double로 구체화한 객체 x 생성
+	x.set(2, 0.5);
+	x.get(a, b);
+
+	cout << "a = " << a << endl << "b = " << b << endl;
+
+	char c;
+	double d;
+	Gclass<char, double> y; // char와 double로 구체화한 객체 y 생성
+	y.set('s', 1.5);
+	y.get(c, d);
+
+	cout << "c = " << c << endl << "d = " << d << endl;
+
+	return 0;
+}
+```
+실행 결과
+```c++
+a = 2
+b = 0.5
+c = s
+d = 1.5 
+```
+위의 결과를 보아 두 개 이상의 제네릭 타입을 가진 제네릭 클래스의 객체를 생성할 때 구체화 타입을 작성하는 과정에서, 작성한 순서대로 제네릭 타입에 대입되는 것을 알 수 있다.
   
   
   
