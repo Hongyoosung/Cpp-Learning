@@ -75,5 +75,6 @@
   
 + ## 템플릿과 표준 템플릿 라이브러리(STL)
   + [일반화와 템플릿](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Templete/Generalization%20Template.md)
+  + [다양한 제네릭 함수](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Templete/Various%20Generic%20Functions.md)
   
 
