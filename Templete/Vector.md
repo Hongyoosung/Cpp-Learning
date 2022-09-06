@@ -83,16 +83,16 @@ it = v.erase(it); // 삭제 후 erase()의 리턴 값으로 it 재설정
 
 ```c++
 #include <iostream>
-#include <vector>
+#include <vector>    // vector 클래스 사용
 using namespace std;
 
 
 int main(int argc, const char* argv[]) {
 
-	vector<int> v;
+	vector<int> v;  // vector 클래스의 정수형 객체 선언
 
 	for (int i = 0; i < 5; i++) {
-		v.push_back(i);
+		v.push_back(i);       // 벡터에 순서대로 i를 삽입
 	}
 
 	for (int i = 0; i < v.size(); i++) {
@@ -100,14 +100,14 @@ int main(int argc, const char* argv[]) {
 	}
 	cout << endl;
 
-	v[1] = 20;
-	v.at(2) = 30;
+	v[1] = 20;     // 벡터의 두 번째 원소에 20을 삽입
+	v.at(2) = 30;  // 벡터의 세 번째 원소에 30을 삽입
 
 	for (int i = 0; i < v.size(); i++) {
 		cout << v[i] << " ";
 	}
 	cout << endl << endl;
-	cout << "v의 3번 째 원소의 값 : " << v.operator[](2) << endl;
+	cout << "v의 3번 째 원소의 값 : " << v.operator[](2) << endl; // 벡터의 세 번째 요소를 출력
 
 	return 0;
 }
@@ -120,7 +120,50 @@ int main(int argc, const char* argv[]) {
 v의 3번 째 원소의 값 : 30
 ```
 
++ ## 문자열을 저장하는 벡터
 
+벡터를 이용하여 입력한 문자열 중 사전 상 가장 뒤에 나오는 문자열을 출력하는 프로그램
+```c++
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+
+int main(int argc, const char* argv[]) {
+
+	vector<string> sv;
+	string name;
+
+	cout << "세 개의 이름을 입력" << endl;
+	for (int i = 0; i < 3; i++) {
+		cout << i + 1 << "번 째 이름 입력" << endl;
+		getline(cin, name);  // name에 이름을 입력
+		sv.push_back(name);  // name을 벡터에 저장
+	}
+	name = sv.at(0);   // name에 맨 처음 이름을 저장
+
+	for (int i = 1; i < sv.size(); i++) { // 인덱스 0은 이미 저장하였으므로 1부터 시작
+		if (name < sv[i]) // sv[i]에 저장된 이름이 name보다 사전에서 먼저 오는 경우
+			name = sv[i]; // name에 sv[i]에 저장된 이름을 저장
+	}
+	cout << "사전에서 가장 뒤에 나오는 이름은 : " << name << endl;
+
+	return 0;
+}
+```
+실행 결과
+```c++
+세 개의 이름을 입력
+1번 째 이름 입력
+abc
+2번 째 이름 입력
+bcd
+3번 째 이름 입력
+def
+사전에서 가장 뒤에 나오는 이름은 : def
+```
+문자는 순서대로 ASCII 코드 값이 증가하는 형태이므로 뒤의 순서의 문자가 ASCII 코드 값이 더 큼. 따라서 문자열 간 크기 비교는 ASCII 코드 값을 기준으로 한다는 점을 이용
 
 
 
