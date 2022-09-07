@@ -9,20 +9,20 @@
 ### map 컨테이너의 멤버 함수와 연산자 함수
 
   
-> + **insert(pair<> &element)** : 맵에 '키'와 '값'으로 구성된 pair 객체에 element를 삽입
-> + **at(key_type& key)** : 맵에서 '키'에 해당하는 '값'을 리턴
-> + **begin()** : 맵의 첫 번째 원소에 대한 참조 리턴
-> + **end()** : 맵의 끝(마지막 원소 다음)을 가리키는 참조 리턴
-> + **empty()** : 맵이 비어있으면 true를 리턴
-> + **find(key_type& key)** : 맵에서 '키'에 해당하는 원소를 가리키는 iterator를 리턴
-> + **erase(iterator it)** : 맵에서 it이 가리키는 원소를 삭제
-> + **size()** : 맵에 들어 있는 원소의 개수를 리턴
-> + **operator[ key_type& key ]()** : 맵에서 '키'에 해당하는 '값'을 리턴
-> + **operator=()** : 맵 치환(복사)
+ + **insert(pair<> &element)** : 맵에 '키'와 '값'으로 구성된 pair 객체에 element를 삽입
+ + **at(key_type& key)** : 맵에서 '키'에 해당하는 '값'을 리턴
+ + **begin()** : 맵의 첫 번째 원소에 대한 참조 리턴
+ + **end()** : 맵의 끝(마지막 원소 다음)을 가리키는 참조 리턴
+ + **empty()** : 맵이 비어있으면 true를 리턴
+ + **find(key_type& key)** : 맵에서 '키'에 해당하는 원소를 가리키는 iterator를 리턴
+ + **erase(iterator it)** : 맵에서 it이 가리키는 원소를 삭제
+ + **size()** : 맵에 들어 있는 원소의 개수를 리턴
+ + **operator[ key_type& key ]()** : 맵에서 '키'에 해당하는 '값'을 리턴
+ + **operator=()** : 맵 치환(복사)
   
-
+#
   
-+ map 컨테이너 생성 및 원소 삽입
++ ### map 컨테이너 생성 및 원소 삽입
   
 ```c++
   map<string, string> dic; // string 타입의 키와 값의 원소 쌍을 저장할 map 컨테이너 dic 생성
@@ -31,7 +31,7 @@
   dic["love"] = "사랑";                  // ("love", "사랑") 저장  "love"라는 키를 검색 시 "사랑" 리턴
 ```
   
-+ '키'로 검색하여 '값' 알아내기
++ ### '키'로 검색하여 '값' 알아내기
 ```c++
   string kor = dic["love"]; // kor은 "사랑" 을 저장
   
