@@ -89,6 +89,6 @@
 #
 
 #### REFERNCE
-[1] 황기태, 『C++ Programming』, 생능출판(2021)
+> [1] 황기태, 『*C++ Programming*』, 생능출판(2021)
 
 
