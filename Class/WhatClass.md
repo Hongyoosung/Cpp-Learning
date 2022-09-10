@@ -32,32 +32,41 @@ public :
 
 ```c++
 #include <iostream>
-using namespace std;
+using namespace std;;
 
 class Student {
 	string name;
 	int age;
-public :
-	string getName(string n);
-	int getAge(int age);
+public:
+	void setName(string name);   // 매개 변수를 문자열 멤버 변수 name에 저장
+	string getName();            // name을 리턴
+	void setAge(int age);        // 매개 변수를 정수형 멤버 변수 age에 저장
+	int getAge();                // age를 리턴
 };
-
-string Student::getName(string n) { //멤버 함수 구현
-	return n;
+void Student::setName(string name) {
+	this->name = name;
 }
-int Student::getAge(int age) {
+string Student::getName() { 
+	return name;
+}
+void Student::setAge(int age) {
+	this->age = age;
+}
+int Student::getAge() {
 	return age;
 }
 
 int main(int argc, const char* argv[]) {
 
 	Student Jinho;                     //객체 생성
-	cout << Jinho.getName("Kim-Jin-Ho") << endl;
-	cout << Jinho.getAge(26) << endl;
-  
-  Student Dohyeon;                   //객체 생성 2, 하나의 클래스에 다수의 객체를 생성할 수 있다.
-	cout << Dohyeon.getName("Kim-Do-Hyeon") << endl;
-	cout << Dohyeon.getAge(23) << endl;
+	Jinho.setAge(26);                  // 멤버 함수 호출, 26 전달 -> 객체 Jinho의 age에 26을 저장
+	Jinho.setName("Kim-Jin-Ho");       // 객체 Jinho의 name에 문자열 저장
+	cout << Jinho.getName() << "의 나이 : " << Jinho.getAge() << endl; // 각 변수를 리턴하는 함수를 출력
+
+	Student Dohyeon;                   //객체 생성 2, 하나의 클래스에 다수의 객체를 생성할 수 있다.
+	Dohyeon.setAge(23);
+	Dohyeon.setName("Kim-Do-Hyeon");
+	cout << Dohyeon.getName() << "의 나이 : " << Dohyeon.getAge() << endl;
 
 
 	return 0;
@@ -66,10 +75,8 @@ int main(int argc, const char* argv[]) {
   
 실행 결과
 ```c++
-Kim-Jin-Ho
-26
-Kim-Do-Hyeon
-23
+Kim-Jin-Ho의 나이 : 26
+Kim-Do-Hyeon의 나이 : 23
 ```
 위는 클래스를 생성하고 멤버 함수를 구현 후 메인 함수에서 해당 클래스의 객체를 생성하고 활용하는 예이다. 먼저 클래스 멤버 함수의 구현은 클래스 외부에서 이루어지지만, 함수 이름 앞에
 클래스의 이름과 범위 지정 연산자 :: 을 사용하여 해당 함수가 어느 클래스에 속하는지 작성한다. 멤버 변수와 멤버 함수는 일반 변수, 함수와 같이 초기화, 매개변수 지정 등이 가능하다.
