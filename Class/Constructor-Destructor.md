@@ -153,16 +153,17 @@ using namespace std;
 class Man {
 	int age;
 public:
-	Man();            
-	Man(int age);    
-	~Man();
+	Man();
+	Man(int age);
+	~Man();      // 소멸자 선언
 	int getAge();
 };
-Man::Man() : age(23) {}
+Man::Man() : age(23) { cout << "age : " << age << " 생성" << endl; } // 기본 생성자, age에 23 대입
 
-Man::Man(int age) { 
-	this->age = age;  
-}      
+Man::Man(int age) {
+	this->age = age;
+	cout << "age : " << age << " 생성" << endl;
+}
 Man::~Man() {
 	cout << "age : " << age << " 소멸" << endl;
 }
@@ -172,11 +173,11 @@ int Man::getAge() {
 
 int main(int argc, const char* argv[]) {
 
-	Man a(10);         
-	Man b;             
-
-	cout << "age : " << a.getAge() << " 생성"  << endl <<
-		"age : " << b.getAge() << " 생성" << endl;
+	Man a(10);
+	{
+		Man b;
+	}
+	Man c(30);
 
 	return 0;
 }
@@ -186,22 +187,27 @@ int main(int argc, const char* argv[]) {
 age : 10 생성
 age : 23 생성
 age : 23 소멸
+age : 30 생성
+age : 30 소멸
 age : 10 소멸
 ```
-메인 함수에서 생성된 객체 a와 b는 리턴 문 후 메인 함수가 종료될 때 각 소멸자를 실행한다. 소멸자의 실행 순서로 보아 객체는 생성된 순서의 반대로 소멸되는
-후입선출의 형태를 띄고 있음을 알 수 있다. 만약 새로운 함수 c()에서 객체 c를 생성하고 c()를 메인 함수 맨 마지막에 호출할 때, 각 객체의 생성과 소멸의 과정은 다음과 같다.
+메인 함수에서 생성된 객체는 리턴문 이후 메인 함수가 종료될 때 각 소멸자를 실행한다. 단, 객체 b는 메인 함수 내에 존재하는
+별도의 공간에서 생성되고 해당 공간이 종료되자 b도 사라지는 것을 알 수 있다. 소멸자의 실행 순서로 보아 객체는 생성된 순서의 반대로 소멸되는
+후입선출의 형태를 띄고 있음을 알 수 있다. 다음은 위 코드에서 객체들의 생성과 소멸 과정을 표현한 것이다.
 ```c++
 메인 함수 시작
 a 생성
-b 생성
 
-c() 호출
+{ 진입
+b 생성
+} 종료
+b 소멸
+
 c 생성
-c() 종료
-c 소멸
 
 메인 함수 종료
-b 소멸
+
+c 소멸
 a 소멸
 ```
 
