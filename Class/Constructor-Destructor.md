@@ -22,18 +22,24 @@ using namespace std;
 
 class Man {
 	int age;
-public :
+public:
 	Man();            //생성자 1
-	Man(int age);     //생성자 2
+	Man(int age);     //생성자 2, 매개 변수가 있음
 	int getAge();
 };
 Man::Man() {        //생성자 1 구현, 멤버 변수의 값 설정
 	age = 23;
+	cout << "생성자 1 실행" << endl;
 }
+
 Man::Man(int age) { //생성자 2 구현, 전달받은 인자를 멤버 변수에 입력
-	this->age = age;  //생성자의 매개변수와 멤버 변수의 이름이 같은 경우, 멤버 변수 앞에 
-}                        //포인터 형태인 this->를 붙여주어 데이터가 멤버 변수로 올바르게 입력되도록 한다.
-int Man::getAge() {
+	this->age = age;
+	cout << "생성자 2 실행" << endl;		
+}                         
+//매개변수와 멤버 변수의 이름이 같은 경우, 멤버 변수 앞에 this 포인터를 붙여주어 데이터가
+//매개 변수가 아닌 멤버 변수로 올바르게 입력되도록 한다. 이는 멤버 함수 구현에도 해당된다.
+ //this 포인터 : 객체 자기 자신을 가리키는 포인터
+int Man::getAge() {                    
 	return age;
 }
 
@@ -43,12 +49,14 @@ int main(int argc, const char* argv[]) {
 	Man b;             //객체 생성 시, 매개변수가 없는 생성자 1 실행
 
 	cout << a.getAge() << endl << b.getAge();
-	
+
 	return 0;
 }
 ```
 실행 결과
 ```c++
+생성자 2 실행
+생성자 1 실행
 10
 23
 ```
