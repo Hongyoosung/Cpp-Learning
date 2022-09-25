@@ -6,7 +6,6 @@
   + [디버깅](https://hyss.notion.site/About-Debug-a578298203d449c0adcd5db1f2401179)
 
 
-
 + ## 변수
   + [변수의 개념](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Value/Valuable.md)
   + [자료형](https://github.com/Hongyoosung/Cpp-Basic/blob/master/Value/Data%20types.md)
