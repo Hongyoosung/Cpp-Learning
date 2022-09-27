@@ -85,6 +85,10 @@
   + [auto 변수](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Templete/Auto.md)
   + [람다식](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Templete/Lambda.md)
   
++ ## 예외 처리와 C언어 링크 지정
+  + 실행 오류와 오류 처리
+  
+  
   
 #
 
