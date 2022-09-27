@@ -87,6 +87,7 @@
   
 + ## 예외 처리와 C언어 링크 지정
   + [실행 오류의 종류와 다양한 오류 처리](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Exception/Execution%20errors.md)
+  + [예외 처리의 방식](https://github.com/Hongyoosung/Cpp-Learning/blob/master/Exception/Exception%20Handling.md)
   
   
   
