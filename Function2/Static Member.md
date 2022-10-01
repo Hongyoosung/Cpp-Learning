@@ -39,7 +39,7 @@ int Man::gold = 500;
 
 int main(int argc, const char* argv[]) {
 
-  cout << Man::gold << endl;   // static 멤버 gold 출력
+  cout << Man::gold << endl;   // static 멤버 gold 출력, 클래스 멤버는 Man::useGold()의 형태처럼 클래스 이름으로 사용 가능
 	Man Jaehak;
 	Man Donghun;
 
@@ -50,7 +50,7 @@ int main(int argc, const char* argv[]) {
 	cout << "Donghun의 money: " << Donghun.getMoney() << endl << endl;
 
 	// gold를 사용한 만큼 차감하고 money를 획득
-	Donghun.setMoney(Donghun.getMoney() + Donghun.useGold(100)); // -> 클래스 멤버는 Man::useGold()의 형태처럼 클래스 이름으로 사용 가능
+	Donghun.setMoney(Donghun.getMoney() + Donghun.useGold(100));  
 
 	cout << "Jaehak의 : gold : " << Jaehak.gold << endl;
 	cout << "Jaehak의 : money : " << Jaehak.getMoney() << endl;
@@ -72,8 +72,8 @@ Jaehak의 : money : 500
 Donghun의 gold : 400
 Donghun의 money: 1000
 ```
-위의 예시처럼 static 멤버는 동일 클래스의 모든 객체가 공유한다. static 멤버들은 객체 생성 이전부터 존재하고 있으므로, 아무 객체 없이도 사용할 수 있다.
-또한, 그 특성상 static 멤버는 동일 클래스의 같은 static인 멤버에만 접근할 수 있고, this 포인터를 사용할 수 없다. 
+위의 예시처럼 static 멤버는 동일 클래스의 모든 객체가 공유한다. static 멤버들은 객체 생성 이전부터 존재하고 있으므로, 아무 객체 없이도 사용할 수 있다. 또한, 생명 주기와 사용 범위의 특성상 static 멤버는 this 포인터를 사용할 수 없다. 이러한 static 멤버는 주로 객체 간의 데이터 공유가 필요할 때 사용된다.
+
 
 
 
