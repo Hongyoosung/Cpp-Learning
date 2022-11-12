@@ -30,7 +30,7 @@
 
 ```c++
 // 전역 공간에 선언
-Color operator + (Color op1, Color op2); /
+Color operator + (Color op1, Color op2); 
 bool operator == (Color op1, Color op2);
 
 class Color {
