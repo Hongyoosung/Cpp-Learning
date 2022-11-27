@@ -93,6 +93,10 @@ int main(int argc, const char* argv[]) {
 }
 ```
 
+#
+
+### REFERENCE
+https://losskatsu.github.io/programming/c-stl-list/#1-%EA%B4%80%EB%A0%A8-%ED%95%A8%EC%88%98-%EC%A0%95%EB%A6%AC
 
 
 
