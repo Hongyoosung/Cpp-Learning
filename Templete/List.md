@@ -9,28 +9,36 @@
  
  
 반복자
-begin(): beginning iterator 반환
-end(): end iterator 반환
+
++ **begin()**: beginning iterator 반환
++ **end()**: end iterator 반환
+
 
 삽입
-push_front(element): 리스트 맨 앞에 원소 추가
-push_back(element): 리스트 맨 뒤에 원소 추가
-insert(iterator, element): iterator가 가리키는 부분의 앞에 원소 추가
-splice(iterator, list) : 해당 반복자의 위치에 리스트의 모든 요소를 옮김.
+
++ **push_front(element)**: 리스트 맨 앞에 원소 추가
++ **push_back(element)**: 리스트 맨 뒤에 원소 추가
++ **insert(iterator, element)**: iterator가 가리키는 부분의 앞에 원소 추가
++ **splice(iterator, list)** : 해당 반복자의 위치에 리스트의 모든 요소를 옮김.
+
 
 삭제
-pop_front(): 리스트 맨 앞의 원소 삭제
-pop_back(): 리스트 맨 뒤의 원소 삭제
-erase(iterator): iterator가 가리키는 부분의 원소 삭제
+
++ **pop_front()**: 리스트 맨 앞의 원소 삭제
++ **pop_back()**: 리스트 맨 뒤의 원소 삭제
++ **erase(iterator)**: iterator가 가리키는 부분의 원소 삭제
+
 
 조회
-*iterator: iterator가 가리키는 원소에 접근
-front(): 첫번째 원소 반환
-back(): 마지막 원소 반환
+
++ *iterator: iterator가 가리키는 원소에 접근
++ **front()**: 첫번째 원소 반환
++ **back()**: 마지막 원소 반환
 
 기타
-empty(): 리스트가 비어있는지 여부
-size(): 리스트 사이즈 반환
+
++ **empty()**: 리스트가 비어있는지 여부
++ **size()**: 리스트 사이즈 반환
 
 
 다음은 list의 splice 등의 멤버 함수를 이용하는 예이다.
